@@ -25,7 +25,7 @@ dependencies {
 
 publishing {
     publications {
-        library(MavenPublication) {
+        pluginMaven(MavenPublication) {
             groupId = 'me.aagaming'
             artifactId = 'fast-load-plugin'
 
