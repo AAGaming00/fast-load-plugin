@@ -50,11 +50,6 @@ publishing {
             }
         }
     }
-    repositories {
-        maven {
-            url = providers.gradleProperty('matthewo.publish.secret').getOrElse("")
-        }
-    }
 }
 
 gradlePlugin {
