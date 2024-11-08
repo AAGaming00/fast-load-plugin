@@ -46,7 +46,22 @@ publishing {
                         name = 'Matthew Oates'
                         email = 'uni.oates@gmail.com'
                     }
+                    developer {
+                        id = 'AAGaming00'
+                        name = 'AAGaming'
+                        email = 'aagaming@riseup.net'
+                    }
                 }
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/AAGaming00/fast-load-plugin"
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
