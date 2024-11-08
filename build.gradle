@@ -25,7 +25,7 @@ dependencies {
 
 publishing {
     publications {
-        pluginMaven(MavenPublication) {
+        library(MavenPublication) {
             groupId = 'me.aagaming'
             artifactId = 'fast-load-plugin'
 
@@ -77,6 +77,8 @@ gradlePlugin {
             tags.set(['ftc', 'java', 'kotlin'])
         }
     }
+
+    automatedPublishing = false
 
     website = "https://github.com/AAGaming00/FtcFastLoadPlugin"
     vcsUrl = "https://github.com/AAGaming00/FtcFastLoadPlugin"
